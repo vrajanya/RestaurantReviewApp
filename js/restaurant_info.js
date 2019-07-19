@@ -83,7 +83,7 @@ fillRestaurantHTML = (restaurant = self.restaurant) => {
   name.innerHTML = restaurant.name;
 
   const address = document.getElementById('restaurant-address');
-  address.innerHTML = `<h2 class="restaurantSubTitles">Address </h2>${restaurant.address}`;
+  address.innerHTML = `<h3 class="restaurantSubTitles">Address </h3>${restaurant.address}`;
   address.tabIndex = 0;
   address.setAttribute('aria-label', `Address ${restaurant.address}`);
 
@@ -108,7 +108,7 @@ fillRestaurantHTML = (restaurant = self.restaurant) => {
  */
 fillRestaurantHoursHTML = (operatingHours = self.restaurant.operating_hours) => {
   const hours = document.getElementById('restaurant-hours');
-  const hourTitle = document.createElement('h2');
+  const hourTitle = document.createElement('h3');
   hourTitle.setAttribute('class', 'restaurantSubTitles');
   hourTitle.setAttribute('aria-label', 'restaurant open hours');
   hourTitle.innerHTML = "Open Hours";
@@ -139,7 +139,7 @@ fillRestaurantHoursHTML = (operatingHours = self.restaurant.operating_hours) => 
  */
 fillReviewsHTML = (reviews = self.restaurant.reviews) => {
   const container = document.getElementById('reviews-container');
-  const title = document.createElement('h2');
+  const title = document.createElement('h3');
   title.innerHTML = 'Reviews';
   title.tabIndex = 0;
   title.setAttribute('aria-label','Reviews');
@@ -165,7 +165,7 @@ createReviewHTML = (review) => {
   const li = document.createElement('li');
   const div = document.createElement('div');
   div.setAttribute('class', 'reviewName')
-  const name = document.createElement('h3');
+  const name = document.createElement('h4');
   name.innerHTML = review.name;
   div.appendChild(name);
 
