@@ -14,7 +14,7 @@ For the **Restaurant Reviews** project, we have to incrementally convert a stati
 
 ## How to Run Application
 
-* You can open live project [here](). 
+* You can open live project [here](https://vrajanya.github.io/RestaurantReviewApp/). 
 * download or clone the repository & run it on your local machine
 
 ### Instructions to run the application on a local machine
